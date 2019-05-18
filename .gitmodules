@@ -1,0 +1,3 @@
+[submodule "raspberry-matrix-creator"]
+	path = raspberry-matrix-creator
+	url = https://github.com/guillain/raspberry-matrix-creator.git

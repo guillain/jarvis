@@ -1,0 +1,31 @@
+*ALLUME*LUMIERE*==my_light_on
+*ETEIND*LUMIERE*|*STOP*LUMIERE*==my_light_off
+*ALLUME*HORLOGE*==my_clock_on
+*ETEIND*HORLOGE*|*STOP*HORLOGE*==my_clock_off
+*QUEL*HEURE*==my_clock
+*QUEL*HUMIDIT*==my_sensor_humidity
+*QUEL*TEMP*==my_sensor_temperature
+*QUEL*UV|*QUEL*ULTRA*VIOLET**==my_sensor_uv
+*QUEL*PRESSION*==my_sensor_pressure
+*QUEL*ALTITUDE*==my_sensor_altitude
+*QUEL*ACCELE*==my_sensor_accelerometer
+*QUEL*GYROSCO*|*QUEL*ROTATION*==my_sensor_gyroscope
+*QUEL*MAGNET*==my_sensor_magnetometer
+*QUEL*EMBARDE*==my_sensor_yaw
+*QUEL*PAS*==my_sensor_pitch
+*QUEL*ROULEAU*==my_sensor_roll
+*AIDE*==jv_display_commands
+*BONJOUR*|*SALUT*==say "Bonjour $username"
+*COMMENT*APPELLE*==say "Je m'appelle $trigger"
+*MERCI*==say "De rien"
+*AU REVOIR*|*BYE*==say "Au revoir $username"; jv_exit
+ANNULE*|TERMINE*==bypass=false; say "Ok"
+ENCORE*==jv_repeat_last_command
+*TEST*==say "Ca fonctionne!"
+*VERSION*==say "Je suis en version $jv_version"
+*REPETE (*) ET (*)==say "(1) (2)"
+*CA VA|ALL IS GOOD*==say "très bien et toi?"
+>*OUI*==say "ravi de l'entendre"
+>*NON*==say "j'en suis navré, dois-je te laisser tranquille?"
+>>*OUI*==say "Au revoir $username"; exit
+>>*NON*==say "Ok je reste"
