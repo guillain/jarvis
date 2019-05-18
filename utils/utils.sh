@@ -27,13 +27,13 @@ order=
 language=
 
 # Public: user's platform (linux, osx)
-platform=
+platform=linux
 
 # Public: user's architecture (armv7l, x86_64)
 jv_arch=
 
 # Public: user's OS name (raspbian, ubuntu, Mac OS X...)
-jv_os_name=
+jv_os_name=raspbian
 
 # Public: user's OS version (8, 16.02, ...)
 jv_os_version=
